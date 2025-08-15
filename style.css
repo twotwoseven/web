@@ -5,43 +5,49 @@
 .question{
     font-size: 24.5px;
 }
-h1{
-    padding: 60px;
-    margin: 30px;
-}
+
 .verygood{
     margin: 20px;
     width: 70px;
     height: 70px;
     border-radius: 70px;
     background-color:#1fef95;
-    
-
+    border:5px;
+    border-color: black;
+    display: inline-block;
 
 }
 .good{
     margin: 20px;
     width: 60px;
     height: 60px;
+    background-color:#1fef95;
     border-radius: 60px;
+    display: inline-block;
 }
 .nomal{
     margin: 20px;
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    background-color:#1fef95;
+    display: inline-block;
 }
 .bad{
     margin: 20px;
     width: 60px;
     height: 60px;
     border-radius: 60px;
+    background-color:#1fef95;
+    display: inline-block;
 }
 .verybad{
     margin: 20px;
     width: 70px;
     height: 70px;
     border-radius: 70px;
+    background-color:#1fef95;
+    display: inline-block;
 }
 
 *{
