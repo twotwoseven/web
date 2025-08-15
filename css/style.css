@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap');
+
+
+*{
+    position: relative;
+    text-align : center;
+}
+#title{
+    font-size: 65px;
+    font-family: "Asta Sans", sans-serif;
+    margin-top:10px;
+    font-optical-sizing: auto;
+}
+img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.question{
+    font-size: 24.5px;
+}
+.button_group{
+    margin: auto;
+}
+.verygood,.verygood:hover{
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    border-width:3px;
+    display: inline-block;
+}
+.good,.good:hover{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border-width:3px;
+    display: inline-block;
+}
+
+.nomal,.nomal:hover{
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border-width:3px;
+    background-color:#1fef95;
+    display: inline-block;
+}
+.bad,.bad:hover{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border-width:3px;
+    background-color:#1fef95;
+    display: inline-block;
+}
+.verybad,.verybad:hover{
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    border-width:3px;
+    background-color:#1fef95;
+    display: inline-block;
+}
+.verygood,.good{
+    background-color:#ffffff;
+}
+.verygood:hover,.good:hover{
+    background-color:#1fef95;
+}
+.nomal{
+    background-color:#ffffff;
+}
+.nomal:hover{
+    background-color:#7e7e7e;
+}
+.verybad,.bad{
+    background-color:#ffffff;
+}
+.verybad:hover,.bad:hover{
+    background-color:#78369c;
+}
+.yes_test{
+    display: inline-block;
+    position: relative;
+    font-size: 22px;
+    color:#09c70f;
+    bottom: 20px;
+}
+.no_test{
+    display: inline-block;
+    position: relative;
+    color:#78369c;
+    font-size: 22px;
+    bottom: 20px;
+}
