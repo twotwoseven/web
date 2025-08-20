@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap');
+.colorbox{
+    display:inline-block;
+    width: 95%;
+    height: 150px;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+    background-color: rgb(56, 179, 37);
+    left: 50px;
+}
+.color{
+    margin: 30px;
+    height: 210px;
+    position: relative;
+    left: 40px;
+}
+.color_circle{
+    margin: 10px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 25%;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.name{
+    font-size: 65px;
+    margin: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 180px;
+}
+
+
+.contain{
+    margin: 30px auto;
+    width: 65%;
+    height: 460px;
+    border: 3px solid black;
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.graph_item {
+    height: 100px;
+    width: 600px;
+}
+
+.graph_label {
+    position: relative;
+    left: 7px;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#red, #blue, #orange, #yellow {
+    position: absolute;
+    width: 60%;
+    height: 30px;
+}
+.graph_item:hover{
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    width: 600px;
+    position: relative;
+    right: 5px;
+}
+.graph_group{
+    height: 400px;
+    width: 60%;
+}
+.left {
+    position: absolute;
+    top: 21.5px;
+    right: 20px;
+    width: 200px;
+    height: 419px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}

@@ -11,6 +11,10 @@
     margin-top:10px;
     font-optical-sizing: auto;
 }
+.qu_title{
+    font-family: "Asta Sans", sans-serif;
+    font-optical-sizing: auto;
+}
 img{
     width: 60px;
     height: 60px;
@@ -18,83 +22,112 @@ img{
 }
 .question{
     font-size: 24.5px;
+    color:rgb(167, 153, 153);
+    font-size: 24.5px;
+}
+.qsturn{
+    color:rgb(24, 25, 28);
 }
 .button_group{
     margin: auto;
 }
-.verygood,.verygood:hover{
-    margin: 20px;
+.verygood{
     width: 70px;
     height: 70px;
-    border-radius: 70px;
-    border-width:3px;
     display: inline-block;
 }
-.good,.good:hover{
-    margin: 20px;
+.good{
     width: 60px;
     height: 60px;
-    border-radius: 60px;
-    border-width:3px;
     display: inline-block;
 }
 
-.nomal,.nomal:hover{
-    margin: 20px;
+.nomal{
     width: 50px;
     height: 50px;
-    border-radius: 50px;
-    border-width:3px;
-    background-color:#1fef95;
     display: inline-block;
 }
-.bad,.bad:hover{
-    margin: 20px;
+.bad{
     width: 60px;
     height: 60px;
-    border-radius: 60px;
-    border-width:3px;
-    background-color:#1fef95;
     display: inline-block;
 }
-.verybad,.verybad:hover{
-    margin: 20px;
+.verybad{
     width: 70px;
     height: 70px;
-    border-radius: 70px;
-    border-width:3px;
-    background-color:#1fef95;
     display: inline-block;
 }
-.verygood,.good{
-    background-color:#ffffff;
+.verygood[type="radio"],.good[type="radio"]{
+        appearance: none;
+        margin: 20px;
+        margin-left: 26px;
+        margin-right: 26px;
+        border: 3px solid rgb(0, 128, 0);
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+    }
+.nomal[type="radio"]{
+    appearance: none;
+        margin: 20px;
+        margin-left: 26px;
+        margin-right: 26px;
+        border: 3px solid rgb(101, 101, 101);
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
 }
-.verygood:hover,.good:hover{
-    background-color:#1fef95;
-}
-.nomal{
-    background-color:#ffffff;
-}
-.nomal:hover{
-    background-color:#7e7e7e;
-}
-.verybad,.bad{
-    background-color:#ffffff;
-}
-.verybad:hover,.bad:hover{
-    background-color:#78369c;
-}
+.verybad[type="radio"],.bad[type="radio"]{
+        appearance: none;
+        margin: 20px;
+        margin-left: 26px;
+        margin-right: 26px;
+        border: 3px solid rgb(111, 0, 128);
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+    }
+.verygood[type="radio"]:checked,.good[type="radio"]:checked {
+        border: 3px solid rgb(0, 128, 0);
+        background-color: rgb(0, 128, 0);
+    }
+.nomal[type="radio"]:checked {
+        border: 3px solid rgb(101, 101, 101);
+        background-color: rgb(101, 101, 101);
+    }
+.bad[type="radio"]:checked,.verybad[type="radio"]:checked {
+        border: 3px solid rgb(111, 0, 128);
+        background-color: rgb(111, 0, 128);
+        
+    }
+
 .yes_test{
     display: inline-block;
     position: relative;
     font-size: 22px;
     color:#09c70f;
-    bottom: 20px;
+    bottom: 45px;
 }
+button,button:hover{
+    display: inline-block;
+    appearance: none;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+
+    font-family: "Asta Sans", sans-serif;
+    font-size: 20px;
+    border: 3px solid black ;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(63, 123, 234);
+    color:rgb(255,255,255);
+}
+
 .no_test{
     display: inline-block;
     position: relative;
     color:#78369c;
     font-size: 22px;
-    bottom: 20px;
+    bottom: 45px;
 }
