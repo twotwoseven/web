@@ -7,39 +7,165 @@
         <link href="C:\Users\dbstj\Desktop\MBTI\web\css\style_result.css" rel="stylesheet">
     </head>
     <body>
-        <div class="mainposter">
-            <p class="colorbox">
-            </p>
-        </div>
-        <div class="color">
-            <div class="color_circle"></div>
-            <p class="name">칭호</p>
-        </div>
-        <div>①나의정당의일치도</div>
         
+        <div class="colorbox" id="resultcolor">
+            <p class="name" id="name">당신은 ''타입!</p>
+        </div>
+
+        
+        <h1 class="same"> 나의 정당 일치도</h1>
         <div class="contain">
             <div class="graph_group">
-                <div class="graph_item">
+                <div class="graph_item_red">
                     <p class="graph_label">국민의힘</p>
                     <meter id="red" min="0" max="100" value="0"></meter>
                 </div>
-                <div class="graph_item">
+                <div class="graph_item_blue">
                     <p class="graph_label">더불어민주당</p>
                     <meter id="blue" min="0" max="100" value="0"></meter>
                 </div>
-                <div class="graph_item">
+                <div class="graph_item_yellow">
                     <p class="graph_label">민주노동당</p>
                     <meter id="yellow" min="0" max="100" value="0"></meter>
                 </div>
-                <div class="graph_item">
+                <div class="graph_item_orange">
                     <p class="graph_label">개혁신당</p>
                     <meter id="orange" min="0" max="100" value="0"></meter>
+                </div>
             </div>
-            <div class="left"></div>
+            <div class="left">
+                <h3 id="type_name"></h3>
+                <p class="type_text"></p>
+            </div>    
         </div>
+        
+        <div class="explan">
+            <hr>
+            
+            <h2> 1. 절충과 타협의 보라</h2>
+            <div><span class="b">더불어민주당</span> + <span class="r">국민의힘</span>지지형</div>
+            <p class="subtitle">→ "이념 초월형 실용주의자"</p>
+
+            <h3>➀ 특징</h3>
+            <ul>
+                <li>특정 이념보다 현실적 성과(경제 성장, 생활 안정, 복지 혜택 등)를 우선시.</li>
+                <li>선거 때마다 정당을 고정적으로 지지하기보다 인물·공약·상황에 따라 선택을 바꿈.</li>
+                <li>갈등보다는 타협·균형을 중요시.</li>
+                <li>중도층, 40~50대 직장인, 자영업자 중 일부에서 나타날 수 있음.</li>
+            </ul>
+
+            <h3>➁ 가치관</h3>
+            “좌·우 싸우지 말고, 일 잘하는 쪽이 필요하다.”
+            <br>변화보다는 현실적 안정 + 점진적 개혁을 선호.
+            
+            <hr>
+            <div>
+                <h2>2. 타오른 개혁의 주황</h2>
+            <div><span class="b">더불어민주당</span> + <span class="o">개혁신당</span> 지지형</div>
+            <p class="subtitle">→ "개혁 성향 강한 진보개혁파"</p>
+
+            <h3>➀ 특징</h3>
+            <ul>
+                <li>민주당이 가진 개혁 이미지를 인정하면서도, 부족하다고 생각하여 더 급진적 변화를 원함.</li>
+                <li>청년층, 대학생, 진보적 시민단체 지지자 일부.</li>
+                <li>기존 기득권 타파, 검찰개혁, 정치 개혁, 재벌 개혁 등 제도 혁신을 강하게 지향.</li>
+            </ul>
+
+            <h3>➁ 가치관</h3>
+                “민주당은 너무 온건하다, 더 밀어붙여야 한다.”
+            <br>정치·사회 구조 자체의 대수술을 기대.
+            
+            <hr>
+
+            <h2>3. 따스한 복지의 노랑</h2>
+            <div><span class="b">더불어민주당</span> + <span class="y">민주노동당</span> 지지형</div>
+            <p class="subtitle">→ "사회복지·노동권 강화 진보파"</p>
+
+            <h3>➀ 특징</h3>
+            <ul>
+                <li>민주당의 포괄적 진보 성향을 인정하면서도, 노동·복지 분야에 더 집중하기를 바람.</li>
+                <li>교사·공무원·노동조합 활동가, 복지 정책에 관심 많은 20~40대 일부.</li>
+                <li>경제적 불평등 완화, 최저임금 인상, 비정규직 문제 해결 등 노동자 권익 중시.</li>
+            </ul>
+
+            <h3>➁ 가치관</h3>
+            “민주당이 추진하는 개혁은 필요하지만, 약자를 위한 진짜 정책은 더 강해야 한다.”
+            <br>평등·분배·사회 안전망을 절대적 가치로 둠.
+            </div>
+            
+
+            <hr>
+
+            <h2>4. 변화의 보수 보라</h2>
+            <div><span class="r">국민의힘</span> +<span class="o">개혁신당</span> 지지형</div>
+            <p class="subtitle">→ "보수개혁 성향의 실용보수"</p>
+
+            <h3>➀ 특징</h3>
+            <ul>
+                <li>보수 정당이지만 구태 정치와 낡은 시스템은 바꿔야 한다고 생각.</li>
+                <li>기업인, 자영업자, 보수적이면서도 신산업·스타트업에 관심 많은 사람들.</li>
+                <li>시장 경제는 유지하면서도, 행정·정치권 개혁, 규제 완화 등을 원함.</li>
+            </ul>
+
+            <h3>➁ 가치관</h3>
+            “보수는 유지하되, 새로운 개혁과 효율성은 필요하다.”
+            <br>경제·안보는 보수, 정치 개혁은 진보적 접근.
+
+            <hr>
+
+            <h2>5. 차분한 균형의 회색</h2>
+            <div><span class="r">국민의힘</span> + <span class="y">민주노동당</span> 지지형</div>
+            <p class="subtitle">→ "사회적 보호를 중시하는 균형형 보수"</p>
+
+            <h3>➀ 특징</h3>
+            <ul>
+                <li>기본적 가치관은 보수적(안보, 시장 중심)이지만, 노동자·서민 보호의 필요성도 인정.</li>
+                <li>소상공인, 중소기업 종사자, 농민·자영업자 중 일부.</li>
+                <li>사회적 약자에 대한 공적 지원은 원하지만, 급진적 평등이나 좌파적 경제 모델은 거부.</li>
+            </ul>
+
+            <h3>➁ 가치관</h3>
+            “시장경제는 유지하되, 사회적 약자도 챙겨야 한다.”
+            <br>전통적 보수 지지자와 진보적 경제정책 사이 타협형 가치관.
+
+            <hr>
+
+            <h2>6. 황금빛 변혁의 노랑</h2>
+            <div><span class="o">개혁신당</span> + <span class="y">민주노동당</span> 지지형</div>
+            <p class="subtitle">→ "급진적 사회변혁 지향형"</p>
+
+            <h3>➀ 특징</h3>
+            <ul>
+                <li>기존 거대 양당(민주·국힘)에 실망하고, 구조적 혁신과 사회정의를 강하게 외침.</li>
+                <li>노동조합 활동가, 청년 진보 지식인, 진보 시민단체 핵심 지지자.</li>
+                <li>경제 구조 개혁, 불평등 해소, 권력 분산, 사회적 연대 강화 등 급진적 변화 선호.</li>
+            </ul>
+
+            <h3>➁ 가치관</h3>
+            “양당 체제는 이미 실패했다. 새롭게 뜯어고쳐야 한다.”
+            <br>자본주의 구조 자체에 대한 비판적 시각을 갖고 있음.
+
+            <hr>
+
+            <h2> 7. 투명한 유연의 흰색</h2>
+            <div><span class="w">중도층 (스윙보터)</span></div>
+            <p class="subtitle">→ "현실적 판단형 유연 지지자"</p>
+
+            <h3>➀ 특징</h3>
+            <ul>
+                <li>특정 정당이나 이념에 고정되지 않고, 상황·이슈·후보·공약에 따라 선택을 바꿈.</li>
+                <li>경제·복지·안보·사회 개혁 등 사안별로 입장이 다를 수 있음 (예: 경제는 보수, 사회는 진보).</li>
+                <li>20~40대 청년층, 직장인, 자영업자, 무당층에서 자주 나타남.</li>
+                <li>정치에 무관심하다가 선거 시점에만 선택하거나, “한쪽에 확실히 기대기 싫은” 태도를 보임.</li>
+            </ul>
+
+            <h3>➁ 가치관</h3>
+            “좌도 우도 필요 없다, 지금 우리 삶에 도움이 되는 쪽을 고른다.”
+            <br>실용성·성과 중심 → 생활비, 일자리, 교육, 주거 안정 같은 체감 문제가 최우선 기준.
+            <br>정치적 진영 싸움(진보 vs 보수)에 피로감을 느끼고, 타협·합리적 해결을 원함.
+
 
         </div>
-        <p class="type">종류/설명</p>
-        <script src="C:\Users\dbstj\Desktop\MBTI\web\js\js\result.js"></script>
+        <script src="js\Result.js"></script>
     </body>
 </html>
